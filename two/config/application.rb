@@ -29,5 +29,11 @@ module Two
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # This whole application is available under "/app2" path. This
+    # value shouldn't start with forward slash because it causes
+    # different behavior in tests and the rest of the application
+    # which breaks tests.
+    config.relative_url_root = "app2"
   end
 end
