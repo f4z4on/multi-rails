@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RootControllerTest < ActionDispatch::IntegrationTest
+class DummyControllerTest < ActionDispatch::IntegrationTest
   test "should get index containing this application's root path" do
     get root_url
     assert_response :success
