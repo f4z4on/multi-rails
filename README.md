@@ -9,7 +9,7 @@ There are two very simple RoR applications created by running:
 
 This is basically using all the “skips” documented in `rails new -h`, so the applications are really bare-bones.
 
-To run the code, change the first two `Define`s in `multi-rails.conf` and include it to your Apache HTTP Server configuration. Then, start each RoR application for its own directory:
+To run the code, change the first two `Define`s in `multi-rails.conf` and include it to your Apache HTTP Server configuration. Then, start each RoR application from their own directories with this command:
 
     rails s -b $PWD/tmp/sockets/server.sock
 
